@@ -71,6 +71,7 @@
     key.classList.add('playing');
     audio.currentTime = 0;
     audio.play();
+    setTimeout(function(){audio.stop()}, 1000);
   }
 
   const keys = Array.from(document.querySelectorAll('.key'));
