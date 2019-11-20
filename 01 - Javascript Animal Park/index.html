@@ -73,7 +73,8 @@ function removeTransition(e){
 function playsound (e){
   const audio = document.querySelector(`audio[data-key = "${e.keyCode}"]`);
   const key = document.querySelector(`div[data-key = "${e.keyCode}"]`);
-
+  audio.volume = 1; // 소리가 되돌아오도록
+  
   //소리 fade out 함수
   function fade(){
     if (audio.volume > 0) {
